@@ -1,0 +1,22 @@
+{
+  "name": "testtumo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gisatich.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caxkakaxamb/TestTumo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caxkakaxamb/TestTumo/issues"
+  },
+  "homepage": "https://github.com/Caxkakaxamb/TestTumo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,6 +1,6 @@
 class TunavorMichat extends LivingCreature {
-    constructor(x, y, id) {
-        super(x, y, id);
+    constructor(x, y, index) {
+        super(x, y, index);
         this.energy = 8;
     }
 
@@ -16,9 +16,9 @@ class TunavorMichat extends LivingCreature {
             [this.x + 1, this.y + 1]
         ];
     }
-    chooseCell(character) {
+    chooseCell(ch) {
         this.getNewCoordinates();
-        return super.chooseCell(character);
+        return super.chooseCell(ch);
     }
     getNewCoordinates() {
         this.directions = [
@@ -103,3 +103,4 @@ class TunavorMichat extends LivingCreature {
         }
     }
 }
+module.exports = new TunavorMichat;

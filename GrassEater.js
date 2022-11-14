@@ -1,6 +1,6 @@
 class GrassEater extends LivingCreature {
-    constructor(x, y, id){
-        super(x, y, id);
+    constructor(x, y, index){
+        super(x, y, index);
         this.energy = 8;
     }
 
@@ -16,9 +16,9 @@ class GrassEater extends LivingCreature {
             [this.x + 1, this.y + 1]
         ];
     }
-    chooseCell(character) {
+    chooseCell(ch) {
         this.getNewCoordinates();
-        return super.chooseCell(character);
+        return super.chooseCell(ch);
     }
     mul() {
         var emptyCells = this.chooseCell(0);
@@ -100,3 +100,4 @@ class GrassEater extends LivingCreature {
         }
     }
 }   
+module.exports = new GrassEater;
