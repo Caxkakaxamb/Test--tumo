@@ -1,5 +1,5 @@
-
-class HzorGisatich extends LivingCreature {
+var LivingCreature = require("./LivingCreature")
+    module.exports = class HzorGisatich extends LivingCreature {
     constructor(x, y, index) {
         super(x, y, index);
         this.energy = 8;
@@ -112,4 +112,3 @@ class HzorGisatich extends LivingCreature {
         }
     }
 }
-module.exports = new HzorGisatich();

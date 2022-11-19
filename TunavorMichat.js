@@ -1,4 +1,5 @@
-class TunavorMichat extends LivingCreature {
+var LivingCreature = require("./LivingCreature")
+    module.exports = class TunavorMichat extends LivingCreature {
     constructor(x, y, index) {
         super(x, y, index);
         this.energy = 8;
@@ -103,4 +104,3 @@ class TunavorMichat extends LivingCreature {
         }
     }
 }
-module.exports = new TunavorMichat;
